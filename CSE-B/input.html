@@ -2,13 +2,20 @@
 <html>
 <head>
 	<title>inputs</title>
-	<script type="text/javascript">
-	</script>
+
 </head>
 <body>
 firstName: <input id="first" type="text" placeholder="Enter first name"><br>
 lastName: <input id="last" type="text" placeholder="Enter last name"><br>
-<input id='btn' type="submit">
+<input id="btn" type="submit">
+
+<script type="text/javascript">
+	document.getElementById('btn').onlick=function(){
+		firstName=document.getElementById('first').value;
+		lastName=document.getElementById('last').value;
+		console.log(firstName +' '+lastName);
+	}
+	</script>
 
 </body>
 </html>
