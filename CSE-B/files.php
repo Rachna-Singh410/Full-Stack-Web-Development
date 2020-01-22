@@ -6,7 +6,9 @@
            <div class="signinbox">
           
 
-<form action="files.php" method="get">
+<form action="ref.php" method="post">
+	<p>Id</p>
+<input type="text" name="id"  placeholder="Enter ID">
 <p>Username</p>
 <input type="text" name="name"  placeholder="Enter Username">
 <p>age</p>
@@ -20,9 +22,7 @@
 </form>
 
 </div>
-<?php
-echo'welcome'.$_GET['name'];
-?>
+
 </body>
 </head>
 </html>
