@@ -1,0 +1,48 @@
+<html>
+<head></head>
+<body>
+	<h3>Click on the button to get Ids which have completed maximum and mimimum number of tasks:</h3>
+<script src="todos.js"></script>    
+    <script type="text/javascript">
+        var tasks = [0,0,0,0,0,0,0,0,0,0]
+        var maxid = []
+        var minid = []
+        for(var i=0; i<data.length; i++){
+            if(data[i]['completed'] == true){
+                tasks[data[i]['userId']-1]++;
+            }
+        }
+        var max=Math.max(...tasks);
+        var min=Math.min(...tasks);
+        for(var i=0; i<tasks.length;i++)
+        {
+        	if(tasks[i]==max){
+        		maxid.push(data[i]['id']);
+        	}
+        }
+        for(var i=0; i<tasks.length;i++)
+        {
+        	if(tasks[i]==min){
+     
+        		minid.push(data[i]['id']);
+        	}
+        }    
+	function myFunction(maxid, minid) {
+			document.write("Ids that have done maximum tasks:  ");
+			for(var i=0;i<maxid.length;i++){
+				document.write(maxid[i]+" ");
+				}
+			document.write("<br>");
+			document.write("Ids that have done minimum tasks:  ");
+			for(var i=0;i<minid.length;i++){
+				document.write(minid[i]+" ");
+				}
+			document.write("<br>");
+ 		
+		}    	
+
+    </script>
+	<button type="button" onclick="myFunction(maxid,minid)">Try it</button>
+	
+</body>
+</html
