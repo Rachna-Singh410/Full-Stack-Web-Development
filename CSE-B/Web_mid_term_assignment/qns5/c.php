@@ -50,7 +50,7 @@
   <script type="text/javascript">
   function Redirect() {
 
-               window.location = "g.php";
+               window.location = "guess1.php";
             
                
             }
