@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+</head>
+<body>
+<button style="width:200px;"onclick="makeAlert();" >"call alert after every 4 second"</button>
+
+<button style="width:200px;" onclick="cancelAlert();">"cancel the alert"</button>
+<script type="text/javascript">
+	var si;
+	function makeAlert(){
+		alert('hello');
+		si=setInterval(makeAlert,4000);
+	}
+	function cancelAlert()
+	{
+		clearsetInterval(si);
+	}
+</script>
+</body>
+</html>
